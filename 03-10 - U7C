@@ -1,0 +1,19 @@
+def fibonacci(n):
+    #Base Case 1
+    if n <= 0:
+        return 0
+    
+    #Base Case 2
+    elif n == 1:
+        return 1
+    #Without the base cases,
+    #the sequence will start with numbers smaller than expected
+    
+    #Uses Fibonacci sequence algorithm via recursion
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+#Range function starts from 0 by default,
+#then stops when it reaches the specified number
+for i in range(11):
+    print((i + 1),":",fibonacci(i))
